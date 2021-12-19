@@ -1,15 +1,43 @@
 package sii.maroc;
 
 public class Meal {
+	private int number_Salad;
+	
+	private boolean MealInPreparationLine=false;
+	
+	public Meal() {
+    	this.MealInPreparationLine=MealInPreparationLine;
+    }
+    
 
+	public int getNumber_Salad() {
+		return number_Salad;
+	}
+
+	public void setNumber_Salad(int number_Salad) {
+		this.number_Salad = number_Salad;
+	}
+
+	
+	public boolean isMealInPreparationLine() {
+		return MealInPreparationLine;
+	}
+	public void setMealInPreparationLine(boolean mealInPreparationLine2) {
+		this.MealInPreparationLine = mealInPreparationLine2;
+		
+	}
+	
 	public int servedDishes() {
-		// TODO Auto-generated method stub
-		return 0;
+	    
+		if (MealInPreparationLine==true) {
+			return number_Salad;}
+		
+			else return 0;
 	}
 
 	public int cookingDuration() {
-		// TODO Auto-generated method stub
-		return 0;
+	
+		return number_Salad*6;
 	}
 
 }

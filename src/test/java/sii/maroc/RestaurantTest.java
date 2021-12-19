@@ -11,7 +11,6 @@ import static org.fest.assertions.api.Assertions.assertThat;
      * some olive oil
      *
      * preparation time is 6 minutes
-     *
      * regarding Restaurant stocks :
      *   if there is not quantity it means that the ingredient is in stock and unlimited. (here it concern olive oil and pepper)
      */
